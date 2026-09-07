@@ -61,14 +61,30 @@
     .park-stories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.park-story{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}.park-story>img{height:210px;object-fit:cover}.park-story-body{padding:23px}.park-story h3{margin:0 0 4px;font-size:1.45rem;letter-spacing:-.03em}.park-story .park-kind{color:var(--muted);font-size:.82rem;font-weight:750}.park-facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:17px 0;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}.park-facts div{background:#f3f4ee;padding:11px}.park-facts strong{display:block;color:var(--green);font-size:.98rem}.park-facts span{display:block;color:var(--muted);font-size:.7rem;line-height:1.25}.park-story h4{margin:17px 0 4px;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--green)}.park-story p{margin:4px 0;color:var(--muted);font-size:.9rem}.park-story .links{margin-top:16px}.park-story .links a{border:1px solid var(--line);background:#f7f5ef}.grand-staircase{margin-top:18px;padding:20px 23px;background:var(--sage);border-radius:18px}.grand-staircase h3{margin:0 0 5px}.grand-staircase p{margin:0;color:#435149}
     .bryce-shuttle-map{margin:0 0 24px;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}.bryce-shuttle-map a{display:block;padding:18px}.bryce-shuttle-map img{cursor:zoom-in}.bryce-shuttle-map figcaption{padding:14px 18px;background:var(--card);border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}.bryce-shuttle-map strong{color:var(--ink)}
     #bryce-shuttle{background:#e8ede6}
+    #option-grid{background:#e9ede7}
+    .option-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .option-grid-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 8px 24px rgba(23,35,29,.06)}
+    .option-grid-head{padding:22px;background:var(--green);color:#fff}
+    .option-grid-head .rank{background:#fff;color:var(--green)}
+    .option-grid-head h3{margin:12px 0 3px;font-size:1.35rem;letter-spacing:-.03em}
+    .option-grid-head p{margin:0;color:#dce6df;font-size:.82rem}
+    .option-grid-days{list-style:none;margin:0;padding:0 20px}
+    .option-grid-days li{display:grid;grid-template-columns:42px 1fr;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
+    .option-grid-days strong{color:var(--green);font-size:.76rem;text-transform:uppercase;letter-spacing:.05em}
+    .option-grid-days span{font-size:.88rem}
+    .option-grid-foot{margin-top:auto;padding:18px 20px 20px}
+    .option-grid-facts{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:13px}
+    .option-grid-facts span{background:var(--sage);color:var(--green);border-radius:999px;padding:5px 8px;font-size:.7rem;font-weight:800}
+    .option-grid-foot p{margin:0 0 13px;color:var(--muted);font-size:.84rem}
+    .option-grid-foot a{font-weight:850;color:var(--green);text-underline-offset:3px}
     @media(max-width:900px){.park-stories{grid-template-columns:1fr}.park-story{display:grid;grid-template-columns:minmax(220px,.7fr) 1fr}.park-story>img{height:100%}}
     @media(max-width:760px){.itinerary-plan>.plan-heading{padding:20px}.plan-body{padding:0 14px}.plan-title{font-size:1.05rem}.day-hikes{grid-template-columns:1fr}.day-hike{grid-template-columns:82px 1fr}.day-hike img{width:82px}.park-story{display:block}.park-story>img{height:190px}}
     @media(max-width:820px){.shuttle-layout{grid-template-columns:1fr}.shuttle-map{position:static;max-width:520px;margin:auto}}
-    @media(max-width:760px){.narrows-facts{grid-template-columns:repeat(2,1fr)}.narrows-facts div:last-child{grid-column:span 2}.depth-row{grid-template-columns:1fr;gap:3px}.dining-grid{grid-template-columns:1fr}}
+    @media(max-width:760px){.narrows-facts{grid-template-columns:repeat(2,1fr)}.narrows-facts div:last-child{grid-column:span 2}.depth-row{grid-template-columns:1fr;gap:3px}.dining-grid{grid-template-columns:1fr}.option-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <header class="topbar"><div class="wrap"><div class="brand">Vegas · Zion · Bryce</div><nav class="nav" aria-label="Page"><a href="#options">Routes</a><a href="#itinerary">Itinerary</a><a href="#driving">Driving</a><a href="#parks">Parks</a><a href="#bryce-guide">Bryce</a><a href="#hikes">Zion</a><a href="#narrows-guide">Narrows</a><a href="#shuttle">Shuttles</a><a href="#entry-food">Entry + food</a><a href="#climate">Climate</a><a href="#decision-guide">Final check</a><a href="#dining">Dining</a><a href="#gear">Gear</a><a href="#lodging">Lodging</a><a href="lodging-prices.html">Prices</a><a class="map-link button" href="https://felt.com/map/Las-Vegas-Zion-Bryce-Oct-8-13-2026-yuhgJAEBRkWUpIEj9AN7GfD?loc=36.43,-114.514,7z" target="_blank" rel="noopener">Open map</a></nav></div></header>
+  <header class="topbar"><div class="wrap"><div class="brand">Vegas · Zion · Bryce</div><nav class="nav" aria-label="Page"><a href="#options">Routes</a><a href="#itinerary">Itinerary</a><a href="#driving">Driving</a><a href="#parks">Parks</a><a href="#bryce-guide">Bryce</a><a href="#hikes">Zion</a><a href="#narrows-guide">Narrows</a><a href="#shuttle">Shuttles</a><a href="#entry-food">Entry + food</a><a href="#climate">Climate</a><a href="#decision-guide">Final check</a><a href="#dining">Dining</a><a href="#gear">Gear</a><a href="#lodging">Lodging</a><a href="#option-grid">Compare</a><a href="lodging-prices.html">Prices</a><a class="map-link button" href="https://felt.com/map/Las-Vegas-Zion-Bryce-Oct-8-13-2026-yuhgJAEBRkWUpIEj9AN7GfD?loc=36.43,-114.514,7z" target="_blank" rel="noopener">Open map</a></nav></div></header>
 
   <main>
     <section class="hero">
@@ -335,6 +351,49 @@
         <tr><td class="pick">St. George</td><td>About 2½ hr from Bryce; about 2 hr to LAS</td><td>The most useful Monday-night alternative for itinerary B: nearly a full Bryce day followed by an easier flight day.</td><td>Hyatt Place; Inn on the Cliff; Staybridge Suites</td></tr>
         <tr><td>Hurricane / La Verkin</td><td>30–45 min to Zion entrance</td><td>A lower-cost substitute for Springdale only. It adds morning driving and weakens Narrows-day logistics, so use it only for substantial savings.</td><td>Wingate; Best Western Plus Zion West</td></tr>
       </tbody></table></div><div class="note"><strong>Cedar City verdict:</strong> yes, it can work—especially if the group wants dinner choices and a conventional hotel Monday. For Tuesday’s 4:27 p.m. flight, St. George is still the more useful stopping point.</div></div></section>
+
+    <section id="option-grid"><div class="wrap"><div class="section-head"><h2>The three options at a glance</h2><p>Read each column from Thursday through Tuesday. The nightly bases and the most important tradeoff appear at the bottom of each option.</p></div>
+      <div class="option-grid" aria-label="Three itinerary options compared side by side">
+        <article class="option-grid-card">
+          <div class="option-grid-head"><span class="rank">A</span><h3>One night in Bryce</h3><p>Two Springdale nights · one Bryce night</p></div>
+          <ol class="option-grid-days">
+            <li><strong>Thu</strong><span>Las Vegas · Shin Lim</span></li>
+            <li><strong>Fri</strong><span>Drive to Springdale · gear fitting</span></li>
+            <li><strong>Sat</strong><span>The Narrows</span></li>
+            <li><strong>Sun</strong><span>Short Zion walk · Bryce sunset</span></li>
+            <li><strong>Mon</strong><span>Queen’s Garden–Navajo · Las Vegas</span></li>
+            <li><strong>Tue</strong><span>Relaxed morning · fly home</span></li>
+          </ol>
+          <div class="option-grid-foot"><div class="option-grid-facts"><span>Bryce sunset</span><span>Optional sunrise</span><span>Hotel change Sunday</span></div><p>A complete Bryce overnight without committing Monday night. The Narrows is fixed to Saturday, so there is no second river day.</p><a href="#itinerary-1">Open full itinerary A →</a></div>
+        </article>
+
+        <article class="option-grid-card">
+          <div class="option-grid-head"><span class="rank">B</span><h3>Two nights in Bryce</h3><p>Two Springdale nights · two Bryce nights</p></div>
+          <ol class="option-grid-days">
+            <li><strong>Thu</strong><span>Las Vegas · Shin Lim</span></li>
+            <li><strong>Fri</strong><span>Drive to Springdale · gear fitting</span></li>
+            <li><strong>Sat</strong><span>The Narrows</span></li>
+            <li><strong>Sun</strong><span>Short Zion walk · Bryce sunset</span></li>
+            <li><strong>Mon</strong><span>Bryce hike · scenic drive · Bryce night</span></li>
+            <li><strong>Tue</strong><span>Early drive to LAS · fly home</span></li>
+          </ol>
+          <div class="option-grid-foot"><div class="option-grid-facts"><span>Most Bryce time</span><span>Two Bryce nights</span><span>Tuesday road risk</span></div><p>The fullest Bryce experience and slowest Monday. It has the longest and least resilient airport transfer on departure day.</p><a href="#itinerary-2">Open full itinerary B →</a></div>
+        </article>
+
+        <article class="option-grid-card">
+          <div class="option-grid-head"><span class="rank">C</span><h3>Bryce as a day trip</h3><p>Three Springdale nights · Las Vegas Monday</p></div>
+          <ol class="option-grid-days">
+            <li><strong>Thu</strong><span>Las Vegas · Shin Lim</span></li>
+            <li><strong>Fri</strong><span>Valley of Fire option · Springdale</span></li>
+            <li><strong>Sat</strong><span>Zion dry-land hiking · gear fitting</span></li>
+            <li><strong>Sun</strong><span>The Narrows</span></li>
+            <li><strong>Mon</strong><span>Bryce hike and overlooks · Las Vegas</span></li>
+            <li><strong>Tue</strong><span>Relaxed morning · fly home</span></li>
+          </ol>
+          <div class="option-grid-foot"><div class="option-grid-facts"><span>One fewer hotel change</span><span>Narrows backup</span><span>Longest Monday</span></div><p>The simplest group logistics and strongest Narrows weather resilience. Bryce is compressed into one long day without sunset or sunrise.</p><a href="#itinerary-3">Open full itinerary C →</a></div>
+        </article>
+      </div>
+    </div></section>
   </main>
 
   <footer class="foot"><div class="wrap"><strong>Vegas · Zion · Bryce · October 8–13, 2026</strong><p>Before booking, confirm the Turo’s exact model and dimensions. Recheck park conditions, shuttle operations, trail closures, weather and river flow immediately before the trip.</p><a href="https://felt.com/map/Las-Vegas-Zion-Bryce-Oct-8-13-2026-yuhgJAEBRkWUpIEj9AN7GfD?loc=36.43,-114.514,7z" target="_blank" rel="noopener">Open the full trip map →</a></div></footer>
