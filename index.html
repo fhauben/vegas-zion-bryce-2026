@@ -398,7 +398,17 @@
 
   <footer class="foot"><div class="wrap"><strong>Vegas · Zion · Bryce · October 8–13, 2026</strong><p>Before booking, confirm the Turo’s exact model and dimensions. Recheck park conditions, shuttle operations, trail closures, weather and river flow immediately before the trip.</p><a href="https://felt.com/map/Las-Vegas-Zion-Bryce-Oct-8-13-2026-yuhgJAEBRkWUpIEj9AN7GfD?loc=36.43,-114.514,7z" target="_blank" rel="noopener">Open the full trip map →</a></div></footer>
   <script>
-    document.querySelector('#itinerary-2')?.setAttribute('open', '');
+    const confirmedItinerary = document.querySelector('#itinerary-2');
+    const openConfirmedItinerary = () => {
+      if (confirmedItinerary) confirmedItinerary.open = true;
+    };
+    openConfirmedItinerary();
+    document.querySelectorAll('a[href="#itinerary"], a[href="#itinerary-2"]').forEach((link) => {
+      link.addEventListener('click', openConfirmedItinerary);
+    });
+    window.addEventListener('hashchange', () => {
+      if (location.hash === '#itinerary' || location.hash === '#itinerary-2') openConfirmedItinerary();
+    });
   </script>
 </body>
 </html>
